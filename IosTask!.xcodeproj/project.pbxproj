@@ -23,9 +23,6 @@
 		16961FCD28DA830100A57769 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16961FCC28DA830100A57769 /* Home.swift */; };
 		16961FCF28DA831900A57769 /* Cart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16961FCE28DA831800A57769 /* Cart.swift */; };
 		16961FD128DA84E700A57769 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 16961FD028DA84E700A57769 /* GoogleService-Info.plist */; };
-		16961FD428DA868E00A57769 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 16961FD328DA868E00A57769 /* FirebaseAuth */; };
-		16961FD728DA877600A57769 /* GoogleSignIn in Frameworks */ = {isa = PBXBuildFile; productRef = 16961FD628DA877600A57769 /* GoogleSignIn */; };
-		16AA51D028DAF89C003A9A49 /* GoogleSignInSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 16AA51CF28DAF89C003A9A49 /* GoogleSignInSwift */; };
 		16AA51D428DAF93E003A9A49 /* Application.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16AA51D328DAF93E003A9A49 /* Application.swift */; };
 /* End PBXBuildFile section */
 
@@ -56,9 +53,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				16AA51D028DAF89C003A9A49 /* GoogleSignInSwift in Frameworks */,
-				16961FD428DA868E00A57769 /* FirebaseAuth in Frameworks */,
-				16961FD728DA877600A57769 /* GoogleSignIn in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -163,9 +157,6 @@
 			);
 			name = "IosTask!";
 			packageProductDependencies = (
-				16961FD328DA868E00A57769 /* FirebaseAuth */,
-				16961FD628DA877600A57769 /* GoogleSignIn */,
-				16AA51CF28DAF89C003A9A49 /* GoogleSignInSwift */,
 			);
 			productName = "IosTask!";
 			productReference = 16961FA528DA813800A57769 /* IosTask!.app */;
@@ -196,9 +187,6 @@
 			);
 			mainGroup = 16961F9C28DA813800A57769;
 			packageReferences = (
-				16961FD228DA868E00A57769 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
-				16961FD528DA877600A57769 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */,
-				16AA51CE28DAF89C003A9A49 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */,
 			);
 			productRefGroup = 16961FA628DA813800A57769 /* Products */;
 			projectDirPath = "";
@@ -443,51 +431,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCRemoteSwiftPackageReference section */
-		16961FD228DA868E00A57769 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
-			requirement = {
-				branch = master;
-				kind = branch;
-			};
-		};
-		16961FD528DA877600A57769 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/google/GoogleSignIn-iOS";
-			requirement = {
-				branch = main;
-				kind = branch;
-			};
-		};
-		16AA51CE28DAF89C003A9A49 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/google/GoogleSignIn-iOS";
-			requirement = {
-				branch = main;
-				kind = branch;
-			};
-		};
-/* End XCRemoteSwiftPackageReference section */
-
-/* Begin XCSwiftPackageProductDependency section */
-		16961FD328DA868E00A57769 /* FirebaseAuth */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 16961FD228DA868E00A57769 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
-			productName = FirebaseAuth;
-		};
-		16961FD628DA877600A57769 /* GoogleSignIn */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 16961FD528DA877600A57769 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */;
-			productName = GoogleSignIn;
-		};
-		16AA51CF28DAF89C003A9A49 /* GoogleSignInSwift */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 16961FD528DA877600A57769 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */;
-			productName = GoogleSignInSwift;
-		};
-/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 16961F9D28DA813800A57769 /* Project object */;
 }
